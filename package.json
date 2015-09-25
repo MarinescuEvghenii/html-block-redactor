@@ -1,0 +1,18 @@
+{
+  "name": "redactor",
+  "version": "0.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "latest"
+  },
+  "devDependencies": {
+    "gulp"            : "latest",
+    "gulp-coffee"     : "latest",
+    "gulp-stylus"     : "latest",
+    "gulp-uglify"     : "latest",
+    "gulp-cssmin"     : "latest",
+    "gulp-rename"     : "latest",
+    "gulp-browserify" : "latest",
+    "gulp-livereload" : "latest"
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Redactor example</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/styles.css">
+	<style type="text/css">
+		@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700);
+		
+		body {
+			padding: 0;
+			margin: 0;
+			background: #e9eaed;
+		}
+
+		* {
+			font-family: "roboto";
+		}
+
+		.wrapper {
+			padding: 50px;
+			width: 800px;
+			position: relative;
+			margin: 0 auto;
+		}
+
+		.button {
+			margin: 20px auto;
+			display: block;
+			background: #4D90FE;
+			border: 1px solid #3079ED;
+			height: 40px;
+			width: 200px;
+			font-size: 12px;
+			text-transform: uppercase;
+			cursor: pointer;
+			outline: none;
+			color: #FFF;
+			border-radius: 4px;
+			box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+		}
+
+		.button:hover {
+			background: #5997FD;
+		}
+	</style>
+	<script type="text/javascript">
+	var data = [  
+	   {  
+	      "name":"richtext",
+	      "value":"<h2>Block Redactor</h2><p><span style=\"font-size: 14px; background-color: transparent;\">Redactor provides smooth and clean design, limitless flexibility and extensibility,&nbsp;</span><span style=\"font-size: 14px; background-color: transparent;\">simple and super-efficient API and amazing user experience.</span></p><p>The route taken by Hawkeye lay across those sandy plains, relived by occasional valleys and swells of land, which had been traversed by their party on the morning of the same day, with the baffled Magua for their guide. The sun had now fallen low toward the distant mountains; and as their journey lay through the interminable forest, the heat was no longer oppressive. Their progress, in consequence, was proportionate; and long before the twilight gathered about them, they had made good many toilsome miles on their return.​<br></p>"
+	   },
+	   {  
+	      "name":"image",
+	      "value":"http://www.menucool.com/slider/jsImgSlider/images/image-slider-2.jpg"
+	   },
+	   {  
+	      "name":"richtext",
+	      "value":"<p>The route taken by Hawkeye lay across those sandy plains, relived by occasional valleys and swells of land, which had been traversed by their party on the morning of the same day, with the baffled Magua for their guide. The sun had now fallen low toward the distant mountains; and as their journey lay through the interminable forest, the heat was no longer oppressive. Their progress, in consequence, was proportionate; and long before the twilight gathered about them, they had made good many toilsome miles on their return.​</p><p>The route taken by Hawkeye lay across those sandy plains, relived by occasional valleys and swells of land, which had been traversed by their party on the morning of the same day, with the baffled Magua for their guide. The sun had now fallen low toward the distant mountains; and as their journey lay through the interminable forest, the heat was no longer oppressive. Their progress, in consequence, was proportionate; and long before the twilight gathered about them, they had made good many toilsome miles on their return.​<br></p>"
+	   },
+	   {  
+	      "name":"audio",
+	      "value":"https://soundcloud.com/traviemccoy/travie-mccoy-golden-feat-sia"
+	   },
+	   {  
+	      "name":"richtext",
+	      "value":"<h2>The Last of The Mohicans</h2><p><i>by James Fenimore Cooper​​</i></p><p>Winding its way among countless islands, and imbedded in mountains, the \"holy lake\" extended a dozen leagues still further to the south. With the high plain that there interposed itself to the further passage of the water, commenced a portage of as many miles, which conducted the adventurer to the banks of the Hudson, at a point where, with the usual obstructions of the rapids, or rifts, as they were then termed in the language of the country, the river became navigable to the tide.​</p>"
+	   },
+	   {  
+	      "name":"video",
+	      "value":"https://vimeo.com/116746233"
+	   },
+	   {  
+	      "name":"richtext",
+	      "value":"<p>The route taken by <a href=\"http://google.com\">Hawkeye</a> lay across those sandy plains, relived by occasional valleys and swells of land, which had been traversed by their party on the morning of the same day, with the baffled Magua for their guide. The sun had now fallen low toward the distant mountains; and as their journey lay through the interminable forest, the heat was no longer oppressive. Their progress, in consequence, was proportionate; and long before the twilight gathered about them, they had made good many toilsome miles on their return.​<br></p><blockquote>The route taken by Hawkeye lay across those sandy plains, relived by occasional valleys and swells of land, which had been traversed by their party on the morning of the same day, with the baffled Magua for their guide. The sun had now fallen low toward the distant mountains; and as their journey lay through the interminable forest, the heat was no longer oppressive. Their progress, in consequence, was proportionate; and long before the twilight gathered about them, they had made good many toilsome miles on their return.​</blockquote><p>The route taken by Hawkeye lay across those sandy plains, relived by occasional valleys and swells of land, which had been traversed by their party on the morning of the same day, with the baffled Magua for their guide. The sun had now fallen low toward the distant mountains; and as their journey lay through the interminable forest, the heat was no longer oppressive. Their progress, in consequence, was proportionate; and long before the twilight gathered about them, they had made good many toilsome miles on their return.​<br></p>"
+	   },
+	   {  
+	      "name":"richtext",
+	      "value":"<p>The route taken by Hawkeye lay across those sandy plains, relived by occasional valleys and swells of land, which had been traversed by their party on the morning of the same day, with the baffled Magua for their guide. The sun had now fallen low toward the distant mountains; and as their journey lay through the interminable forest, the heat was no longer oppressive. Their progress, in consequence, was proportionate; and long before the twilight gathered about them, they had made good many toilsome miles on their return.​</p>"
+	   },
+	   {  
+	      "name":"map",
+	      "value": "{\"bounds\":{\"northEast\":{\"lat\":47.04191855049435,\"lng\":28.82118612340082},\"southWest\":{\"lat\":47.02963414251496,\"lng\":28.789171276599063}},\"markers\":[{\"lat\":47.0357767,\"lng\":28.805178699999942}]}"
+	   }
+	]
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+	<form id="form" role="form" action="">
+		<div id="redactor" class="redactor"></div>
+		<button class="button">Save</button>
+	</form>
+</div>
+
+<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Jquery UI sortable -->
+<script type="text/javascript" src="../bower_components/jquery-ui/ui/minified/core.min.js"></script>
+<script type="text/javascript" src="../bower_components/jquery-ui/ui/minified/widget.min.js"></script>
+<script type="text/javascript" src="../bower_components/jquery-ui/ui/minified/mouse.min.js"></script>
+<script type="text/javascript" src="../bower_components/jquery-ui/ui/minified/sortable.min.js"></script>
+<!-- / Jquery UI sortable -->
+<script type="text/javascript" src="../dist/js/scripts.js"></script>
+<script type="text/javascript">
+	var redactor = $("#redactor").redactor({ data: data })
+	var form 	 = $("#form")
+	$("#form").on("submit", function( event ) {
+		event.preventDefault()
+		console.log( form.serializeArray() )
+	})
+</script>
+</body>
+</html>

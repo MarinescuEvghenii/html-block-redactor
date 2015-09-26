@@ -2,8 +2,8 @@ Component = require "./component"
 
 class Image
   paths:
-    upload: "https://i.simpalsmedia.com/upload/?template=34233a1b243a9132e7b6dccacf42ae1cc5c0eba0cd26b6fb9336f84bb59eed1fE23HJoh5cjm1msz5XtrKLTfqwm6XvnotF7dBm3xTjj2ICS%2FiGoqDPPQco1nMsoNKJLBA34g1UlLfGA8OILUcQwxNxrcXJjFljtlg4HutJ9PSxkKkjH6XUrZhSAaezxaW9GH%2FKYZ9AwH0hB7dSc6v6iQtfAf9lC%2FMIG9AICa1w%2F4%3DOPteuc7aEeUpyV67ojgQHLCO56VneaLj72pIBgRf5uPwqpPSlh8KjptxtdUufU6UVq3n%2BrxqiwP%2BI2saOZXjuAAAClQCd6Hbio8p9%2BfIbgMNui%2FLoG5nRiEy21qmH6toiMfdMjDsLl%2FwX2JMt6wyXKDeRxXsMOGr2PidYuB2zYs%3Dfepku89HLf8jPcgpTBj2T2U6Pylutz%2BQTtuJyrAYzkogvfGT9NpjTMwbot2c93dUo%2FNMviveFb4cCG0Q7ifuPHYCJnX%2F2hIBqeKK6USN%2Fp5IST%2BwROUtYqmIehcrb8h9wmZWPvY5V%2BF7zXW5LHrTjMkgsFOrO6NUVCgJ4mX3Zpc%3D"
-    image : "https://i.simpalsmedia.com/sporter.md/posts/thumbs/"
+    upload: ""
+    image : ""
   
   classes:
     main  : "redactor__body__component__image"
